@@ -1,0 +1,52 @@
+.home-page{
+    padding-top: 80px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    height: 100vh;
+    background-image: url('../assests/hero/Hero.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-display{
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    color: var(--color-secondary);
+}
+
+.home-display p{
+    color:var(--color-black);
+    text-align: center;
+}
+
+
+/* mobile view */
+@media all and (max-width: 700px) {
+    .home-display{
+        padding: 200px 15px 120px 15px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+/* tab view */
+@media  (min-width: 700px) and (max-width: 900px){
+    .home-display{
+        padding: 200px 15px 120px 15px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    p{
+        font-size: 20px;
+    }
+}

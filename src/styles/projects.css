@@ -1,0 +1,142 @@
+.project-page {
+    padding-top: 80px;
+    height: 80vh;
+    
+}
+
+.project-page h1 {
+    padding: 20px 0 20px 100px;
+    font-size: var(--font-title);
+    text-transform: uppercase;
+}
+
+.project-container {
+    padding:20px;
+    display: flex;
+    align-items: center;
+}
+
+.project-left {
+    width: 40%;
+    padding: 100px;
+}
+
+
+.project-right {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+
+
+
+/* Project Card */
+.project-card {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px 4px 30px #000000;
+    /* transform: matrix(1, 0, 0, 1, 0, 0); */
+}
+
+.project-card img {
+    height: 95px;
+    width: 150px;
+}
+
+.project-card span {
+    width: 150px !important;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center!important;
+    color: var(--color-primary);
+}
+
+/* mobile view */
+@media all and (max-width: 700px) {
+    .project-page {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+        height: 100vh
+    }
+
+    .project-page h1 {
+        padding: 10px 0 10px 40px;
+        font-size: var(--font-title);
+    }
+
+    .project-container{
+        flex-direction: column;
+        /*align-items: left;*/
+    }
+
+    .project-right{
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 20px 0 0;
+    }
+
+    .project-left {
+        width: 90%;
+        padding: 0 20px 20px 20px;
+    }
+}
+
+/* tab view */
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-right{
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* margin:0; */
+    }
+
+    .project-left {
+        width: 90%;
+        padding: 0 20px 20px 20px;
+    }
+}
+
+/* background for projectcard */
+#todolist {
+    background-color: #4d2929;
+}
+
+#vegan_rest {
+    background-color: #55673D;
+}
+
+#package_tracker {
+    background-color: #132949;
+}
+
+#bbq_rest {
+    background-color: #665e5e;
+}
+
+#learning_platform {
+    background-color: #4a7dab;
+}
+
+#netflix {
+    background-color: #e00909;
+}
+
+/* .blurCard {
+    filter: blur(1.5px);
+} */
+
+.blurCard-text{
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    text-transform: uppercase;  
+}
