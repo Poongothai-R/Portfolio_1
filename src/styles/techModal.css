@@ -15,8 +15,8 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     z-index: 1000;
-    width: 60vw;
-    height: 70vh;
+    width: 70vw;
+    height: 90vh;
     font-family: var(--font-family);
 }
 
@@ -34,6 +34,6 @@
     .modalview {
         z-index: 1000;
         width: 60vw;
-        height: 90vh;
+        height: 70vh;
     }
 }
