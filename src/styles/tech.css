@@ -20,7 +20,7 @@
 
 .tech-title h1{
     font-size: 40px;
-    padding: 10px 0px 10px 100px;
+    padding: 10px 0 10px 100px;
     text-transform: uppercase;
 }
 
@@ -49,6 +49,7 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -62,7 +63,7 @@
 
     .tech-title h1{
         font-size: 40px;
-        padding: 20px 0px 10px 40px;
+        padding: 20px 0 10px 40px;
         text-transform: uppercase;
     }
 
