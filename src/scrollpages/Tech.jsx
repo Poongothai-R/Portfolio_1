@@ -1,11 +1,13 @@
 import '../styles/tech.css';
 import TechIcon from '../data/Tech_icon.json';
 import TechItem from '../components/TechItem';
+import TechModalCard from "../components/TechModalCard";
 
-export default function Tech() {
+export default function Tech({setShowModal}) {
     const techList = TechIcon.map((recs) => (
-        <TechItem key={recs.id} techData={recs} />
-    )
+        <TechItem key={recs.id} techData={recs}
+    popup={()=>setShowModal(<TechModalCard techModalData={recs}/> )} />
+        )
     );
 
     return (

@@ -18,7 +18,7 @@ export default function App() {
       <Hero />
       <About />
       <Projects setShowModal={setShowModal}/>
-      <Tech />
+      <Tech setShowModal={setShowModal} />
       <Contact />
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </div>

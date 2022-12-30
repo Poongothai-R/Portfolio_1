@@ -1,10 +1,10 @@
 import '../styles/tech.css';
 
-export default function TechItem({techData}) {
-    const{title,image} = techData;
+export default function TechItem({techData,popup}) {
+    const{id,title,image} = techData;
     const techImgURL = require(`../assests/skills/${image}`);
     return(
-        <div className="tech-card">
+        <div className="tech-card" onClick={()=>popup(id)}>
             <img src={techImgURL} alt="skill-logo"/>
             <h6>{title}</h6>
         </div>
