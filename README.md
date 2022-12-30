@@ -4,14 +4,6 @@
 This is a React JS based web app intended to be used for creating a portfolio website.
 
 Host Link: https://myportfolio-204f0.web.app
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-  npm i react-image-file-resizer
-```
 
 
 ## Pre-requisites
